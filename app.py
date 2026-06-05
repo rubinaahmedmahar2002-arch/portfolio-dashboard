@@ -1,13 +1,11 @@
-# requirements:
-# streamlit
-# pandas
-# plotly
-# streamlit-option-menu
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 from streamlit_option_menu import option_menu
+
+# =========================================================
+# PAGE CONFIG
+# =========================================================
 
 st.set_page_config(
     page_title="Rubina Ahmed Mahar | Business Analytics Portfolio",
@@ -35,6 +33,11 @@ st.markdown(
             radial-gradient(circle at 92% 8%, rgba(124, 58, 237, 0.16), transparent 28%),
             linear-gradient(135deg, #020617 0%, #07111f 48%, #0f172a 100%);
         color: #f8fafc;
+    }
+
+    [data-testid="stHeader"] {
+        background: rgba(2, 6, 23, 0.95) !important;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.18) !important;
     }
 
     [data-testid="stSidebar"] {
@@ -263,57 +266,90 @@ st.markdown(
         font-weight: 900 !important;
     }
 
-    /* Dropdown, multiselect, and text input visibility fix */
-    .stSelectbox label, .stMultiSelect label, .stTextInput label {
+    /* Widget visibility fix */
+    .stSelectbox label,
+    .stMultiSelect label,
+    .stTextInput label {
         color: #f8fafc !important;
         font-weight: 800 !important;
     }
 
     div[data-baseweb="select"] > div {
-        background-color: #ffffff !important;
-        border: 1px solid #38bdf8 !important;
+        background-color: #0f172a !important;
+        border: 1.5px solid #38bdf8 !important;
         border-radius: 12px !important;
+        min-height: 46px !important;
     }
 
-    div[data-baseweb="select"] span {
-        color: #020617 !important;
-        font-weight: 650 !important;
+    div[data-baseweb="select"] * {
+        color: #f8fafc !important;
+        opacity: 1 !important;
     }
 
     div[data-baseweb="select"] svg {
-        fill: #020617 !important;
+        fill: #f8fafc !important;
+        color: #f8fafc !important;
     }
 
-    div[role="listbox"] {
-        background-color: #ffffff !important;
+    div[data-baseweb="popover"],
+    div[data-baseweb="popover"] * {
+        background-color: #0f172a !important;
+        color: #f8fafc !important;
+        opacity: 1 !important;
+    }
+
+    ul[role="listbox"] {
+        background-color: #0f172a !important;
         border: 1px solid #38bdf8 !important;
         border-radius: 12px !important;
+        padding: 6px !important;
     }
 
-    div[role="listbox"] * {
-        color: #020617 !important;
-        background-color: #ffffff !important;
+    ul[role="listbox"] li,
+    div[role="option"],
+    li[role="option"] {
+        background-color: #0f172a !important;
+        color: #f8fafc !important;
+        opacity: 1 !important;
+        font-weight: 650 !important;
     }
 
-    div[role="option"] {
-        color: #020617 !important;
-        background-color: #ffffff !important;
+    ul[role="listbox"] li:hover,
+    div[role="option"]:hover,
+    li[role="option"]:hover {
+        background-color: #1e293b !important;
+        color: #ffffff !important;
     }
 
-    div[role="option"]:hover {
-        background-color: #dbeafe !important;
-        color: #020617 !important;
+    div[role="option"][aria-selected="true"],
+    li[role="option"][aria-selected="true"] {
+        background-color: #2563eb !important;
+        color: #ffffff !important;
+        font-weight: 800 !important;
+    }
+
+    div[data-baseweb="tag"] {
+        background-color: #1e40af !important;
+        border: 1px solid #60a5fa !important;
+    }
+
+    div[data-baseweb="tag"] span {
+        color: #ffffff !important;
+        font-weight: 700 !important;
     }
 
     .stTextInput input {
-        background-color: #ffffff !important;
-        color: #020617 !important;
-        border: 1px solid #38bdf8 !important;
+        background-color: #0f172a !important;
+        color: #f8fafc !important;
+        border: 1.5px solid #38bdf8 !important;
         border-radius: 12px !important;
+        min-height: 46px !important;
+        font-weight: 650 !important;
     }
 
     .stTextInput input::placeholder {
-        color: #475569 !important;
+        color: #cbd5e1 !important;
+        opacity: 1 !important;
     }
 
     .stTabs [data-baseweb="tab-list"] {
@@ -341,12 +377,268 @@ st.markdown(
 )
 
 # =========================================================
-# DATA
+# PROJECT DATA
 # =========================================================
 
 projects = [
     {
-        "name": "Business Process Automation Dashboard",
+        "name": "AI-Powered Global Data and AI Job Market Intelligence",
+        "short_name": "AI Job Market",
+        "domain": "Data Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Advanced",
+        "dataset": "Global data and AI job market dataset",
+        "tools": ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Machine Learning"],
+        "problem": "Students and early-career professionals need to understand job market trends, salaries, and skill demand in data and AI roles.",
+        "solution": "Analyze global job market patterns and build salary prediction models using machine learning.",
+        "business_value": "Turns job market data into career planning, salary insight, and role-demand intelligence.",
+        "pages": ["Market Overview", "Salary Analysis", "Role and Skill Trends", "Prediction Model", "Recommendations"],
+        "kpis": ["Average salary", "Top roles", "Top skills", "Salary by region", "Model performance"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "HR Analytics Dashboard using Power BI",
+        "short_name": "HR Analytics",
+        "domain": "HR Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Intermediate",
+        "dataset": "HR analytics sample dataset",
+        "tools": ["Power BI", "Excel", "HR Metrics", "Dashboard Design", "Data Cleaning"],
+        "problem": "HR teams need clear visibility into employee structure, attrition, hiring, and workforce metrics.",
+        "solution": "Build a Power BI dashboard to analyse workforce demographics, department metrics, and employee trends.",
+        "business_value": "Supports HR reporting, workforce planning, and management decision-making.",
+        "pages": ["Workforce Overview", "Attrition Analysis", "Department View", "Employee Insights"],
+        "kpis": ["Total employees", "Attrition rate", "Average salary", "Average tenure", "Department headcount"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Project Management Tracker using Microsoft Excel",
+        "short_name": "Project Tracker",
+        "domain": "Business Reporting",
+        "role": "Business Analyst",
+        "status": "Completed",
+        "difficulty": "Intermediate",
+        "dataset": "Project tracking workbook",
+        "tools": ["Excel", "Project Tracking", "Status Reporting", "Data Validation", "Conditional Formatting"],
+        "problem": "Managers need a simple way to track project status, owners, timelines, delays, and completion progress.",
+        "solution": "Create an Excel-based tracker for project monitoring, task ownership, deadlines, and reporting.",
+        "business_value": "Improves project visibility, follow-up, accountability, and reporting discipline.",
+        "pages": ["Project Overview", "Task Tracker", "Status Summary", "Risk and Delay View"],
+        "kpis": ["Total tasks", "Completed tasks", "Delayed tasks", "Pending tasks", "Completion rate"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Python for Data Analysis: Pandas and NumPy",
+        "short_name": "Python Data Analysis",
+        "domain": "Data Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Foundation",
+        "dataset": "Python practice datasets",
+        "tools": ["Python", "Pandas", "NumPy", "Data Cleaning", "EDA"],
+        "problem": "Raw data needs cleaning, exploration, and transformation before analysis.",
+        "solution": "Use Pandas and NumPy to clean, reshape, summarise, and explore structured datasets.",
+        "business_value": "Builds the foundation for practical analytics workflows and data preparation.",
+        "pages": ["Data Loading", "Data Cleaning", "Feature Summary", "Exploratory Analysis"],
+        "kpis": ["Rows cleaned", "Missing values", "Duplicate records", "Feature count", "Summary metrics"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Exploratory Data Analysis of Global Suicide Rates",
+        "short_name": "Global Suicide EDA",
+        "domain": "Public Health Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Intermediate",
+        "dataset": "Global suicide rates dataset",
+        "tools": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+        "problem": "Public health datasets need clear visual analysis to identify vulnerable regions, groups, and trends.",
+        "solution": "Analyze suicide rates across countries, years, age groups, gender, and socioeconomic indicators.",
+        "business_value": "Supports public health storytelling, policy awareness, and evidence-based discussion.",
+        "pages": ["Global Overview", "Country Trends", "Age and Gender Analysis", "Risk Pattern View"],
+        "kpis": ["Suicide rate", "Country ranking", "Age group risk", "Gender comparison", "Trend movement"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Global Mental Health Data Analysis and Modeling",
+        "short_name": "Mental Health Analytics",
+        "domain": "Public Health Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Advanced",
+        "dataset": "Global mental health dataset",
+        "tools": ["Python", "Pandas", "Visualization", "Scikit-learn", "Modeling"],
+        "problem": "Mental health indicators need structured analysis to reveal patterns across countries and populations.",
+        "solution": "Analyze mental health indicators and apply basic modeling to understand trends and relationships.",
+        "business_value": "Turns public health data into interpretable insights and research-style analytics.",
+        "pages": ["Mental Health Overview", "Country Comparison", "Trend Analysis", "Modeling Summary"],
+        "kpis": ["Indicator rate", "Country average", "Trend change", "Model score", "Risk pattern"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Heart Attack Analysis and Prediction",
+        "short_name": "Heart Risk Prediction",
+        "domain": "Healthcare Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Advanced",
+        "dataset": "Heart attack risk dataset",
+        "tools": ["Python", "Pandas", "Scikit-learn", "Classification", "EDA"],
+        "problem": "Healthcare datasets need interpretable analysis to understand patient risk patterns.",
+        "solution": "Analyze health indicators and build prediction-focused classification models.",
+        "business_value": "Shows healthcare analytics, risk analysis, feature interpretation, and predictive modeling.",
+        "pages": ["Health Overview", "Risk Factors", "Model Results", "Feature Analysis"],
+        "kpis": ["Accuracy", "Risk class", "Feature impact", "Patient count", "Prediction score"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Water Quality Exploratory Data Analysis",
+        "short_name": "Water Quality EDA",
+        "domain": "Environmental Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Intermediate",
+        "dataset": "Water quality dataset",
+        "tools": ["Python", "Pandas", "Matplotlib", "EDA", "Data Quality Checks"],
+        "problem": "Environmental data needs quality checks and trend analysis before it can support decisions.",
+        "solution": "Explore water quality indicators, missing values, trends, and safety-related variables.",
+        "business_value": "Demonstrates environmental analytics, public data interpretation, and data quality thinking.",
+        "pages": ["Water Quality Overview", "Missing Values", "Indicator Trends", "Safety Summary"],
+        "kpis": ["Quality score", "Missing values", "Indicator average", "Risk level", "Trend change"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Spotify User Behaviour and Pattern Recognition",
+        "short_name": "Spotify User Analytics",
+        "domain": "Customer Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Advanced",
+        "dataset": "Spotify user behaviour dataset",
+        "tools": ["Python", "Pandas", "Machine Learning", "Pattern Recognition", "EDA"],
+        "problem": "Digital platforms need to understand user behaviour, engagement, and listening patterns.",
+        "solution": "Analyze Spotify user behaviour and identify pattern groups using analytics and ML techniques.",
+        "business_value": "Shows customer behaviour analysis, segmentation thinking, and product analytics.",
+        "pages": ["User Overview", "Listening Patterns", "Segment Analysis", "Engagement Insights"],
+        "kpis": ["Listening frequency", "User segment", "Engagement score", "Top pattern", "Cluster count"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Netflix Data Analytics Project",
+        "short_name": "Netflix Analytics",
+        "domain": "Content Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Intermediate",
+        "dataset": "Netflix titles dataset",
+        "tools": ["Python", "Pandas", "Visualization", "Content Analytics", "EDA"],
+        "problem": "Streaming platforms need to understand content mix, genre trends, country contribution, and audience catalogue patterns.",
+        "solution": "Analyze Netflix titles by genre, country, release year, duration, and content type.",
+        "business_value": "Shows entertainment analytics and business storytelling through content data.",
+        "pages": ["Catalogue Overview", "Country Analysis", "Genre Trends", "Duration and Release Patterns"],
+        "kpis": ["Total titles", "Movie count", "TV show count", "Top countries", "Top genres"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Youth Job Opportunities Around the World",
+        "short_name": "Youth Jobs Analytics",
+        "domain": "Labour Market Analytics",
+        "role": "Data Analyst",
+        "status": "Completed",
+        "difficulty": "Intermediate",
+        "dataset": "Global youth job opportunity indicators",
+        "tools": ["Python", "Pandas", "Scoring Model", "Visualization", "Business Storytelling"],
+        "problem": "Young professionals need a structured way to compare job opportunity conditions across countries.",
+        "solution": "Create a scoring system to compare countries based on employment and opportunity indicators.",
+        "business_value": "Shows labour market analysis, index building, and decision-support thinking.",
+        "pages": ["Country Ranking", "Opportunity Score", "Regional View", "Recommendation Summary"],
+        "kpis": ["Opportunity score", "Country rank", "Employment indicator", "Risk level", "Recommendation"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Creating Financial Statements using Microsoft Excel",
+        "short_name": "Financial Statements",
+        "domain": "Financial Analytics",
+        "role": "Business Analyst",
+        "status": "Completed",
+        "difficulty": "Foundation",
+        "dataset": "Accounting and financial statement workbook",
+        "tools": ["Excel", "Accounting", "Financial Statements", "Formulas", "Reporting"],
+        "problem": "Businesses need structured financial statements to understand financial position and performance.",
+        "solution": "Prepare financial statement formats and calculations using Excel.",
+        "business_value": "Shows accounting knowledge, Excel reporting, and finance data structuring.",
+        "pages": ["Income Statement", "Balance Sheet", "Cash Flow", "Summary"],
+        "kpis": ["Revenue", "Expenses", "Profit", "Assets", "Liabilities"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Medical Cost Regression Analysis",
+        "short_name": "Medical Cost Regression",
+        "domain": "Healthcare Analytics",
+        "role": "Data Analyst",
+        "status": "In Progress",
+        "difficulty": "Intermediate",
+        "dataset": "Medical insurance cost dataset",
+        "tools": ["Python", "Regression", "Pandas", "Scikit-learn", "EDA"],
+        "problem": "Healthcare cost data needs analysis to understand how patient attributes influence insurance charges.",
+        "solution": "Build regression models to predict medical cost and explain key cost drivers.",
+        "business_value": "Shows regression modeling, feature interpretation, and healthcare analytics.",
+        "pages": ["Cost Overview", "Feature Analysis", "Regression Model", "Prediction Results"],
+        "kpis": ["MAE", "MSE", "R2 score", "Average charge", "Top cost driver"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "Soybean Sugar Content Prediction using Machine Learning",
+        "short_name": "Soybean ML",
+        "domain": "Agricultural Analytics",
+        "role": "Data Analyst",
+        "status": "In Progress",
+        "difficulty": "Advanced",
+        "dataset": "Advanced Soybean Agricultural Dataset",
+        "tools": ["Python", "Linear Regression", "Random Forest", "GridSearchCV", "Feature Importance"],
+        "problem": "Agricultural datasets can help predict crop characteristics and improve analysis of plant traits.",
+        "solution": "Build regression models to predict soybean sugar content and compare model performance.",
+        "business_value": "Shows end-to-end ML workflow, regression, model evaluation, and feature importance.",
+        "pages": ["Data Cleaning", "EDA", "Model Comparison", "Feature Importance", "Residual Analysis"],
+        "kpis": ["MSE", "R2 score", "Cross-validation score", "Feature importance", "Prediction error"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "K-Means Customer Support Clustering",
+        "short_name": "K-Means Clustering",
+        "domain": "Customer Analytics",
+        "role": "Data Analyst",
+        "status": "In Progress",
+        "difficulty": "Intermediate",
+        "dataset": "Technical support or customer service dataset",
+        "tools": ["Python", "K-Means", "Elbow Method", "Silhouette Score", "Clustering"],
+        "problem": "Support teams need to identify customer or ticket groups to improve service strategy.",
+        "solution": "Apply K-Means clustering and evaluate cluster quality using elbow method and silhouette score.",
+        "business_value": "Shows segmentation, unsupervised learning, and operational customer analytics.",
+        "pages": ["Data Overview", "Cluster Selection", "Segment Profiles", "Recommendations"],
+        "kpis": ["Cluster count", "Silhouette score", "Inertia", "Segment size", "Support priority"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "CSR Project Monitoring and Impact Dashboard",
+        "short_name": "CSR Impact",
+        "domain": "CSR Analytics",
+        "role": "Business Analyst",
+        "status": "Planned",
+        "difficulty": "Advanced",
+        "dataset": "Synthetic CSR project dataset inspired by internship workflows",
+        "tools": ["Excel", "Power BI", "Budget Analysis", "Stakeholder Reporting", "Compliance Tracking"],
+        "problem": "CSR projects need clear tracking across budgets, vendors, beneficiaries, documents, and impact.",
+        "solution": "Build a CSR dashboard for health, education, water supply, and welfare initiatives.",
+        "business_value": "Connects project monitoring, budget control, beneficiary reporting, and compliance tracking.",
+        "pages": ["CSR Portfolio Overview", "Project Category", "Budget and Vendor", "Impact", "Compliance"],
+        "kpis": ["Projects", "Budget used", "Beneficiaries", "Completed projects", "Delayed projects"],
+        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
+    },
+    {
+        "name": "AI-Powered Business Process Automation Dashboard",
         "short_name": "Process Automation",
         "domain": "Business Process Automation",
         "role": "ICT Business Analyst",
@@ -391,22 +683,6 @@ projects = [
         "business_value": "Improves marketing budget decisions and connects campaigns with sales outcomes.",
         "pages": ["Campaign Overview", "Channel Performance", "Customer Funnel", "Budget Optimizer"],
         "kpis": ["Total spend", "Revenue", "ROAS", "Conversion rate", "CPA"],
-        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
-    },
-    {
-        "name": "HR Workforce and Attrition Dashboard",
-        "short_name": "HR Analytics",
-        "domain": "HR Analytics",
-        "role": "Data Analyst",
-        "status": "In Progress",
-        "difficulty": "Intermediate",
-        "dataset": "HR sample dataset",
-        "tools": ["Power BI", "DAX", "Excel", "HR Metrics", "Data Cleaning"],
-        "problem": "Management needs visibility into attrition, hiring, salary gaps, and workforce structure.",
-        "solution": "Build a workforce dashboard with attrition analysis, hiring trends, and retention recommendations.",
-        "business_value": "Supports HR planning, salary review, hiring strategy, and retention decisions.",
-        "pages": ["Workforce Overview", "Attrition Analysis", "Hiring and Promotion", "Management Insights"],
-        "kpis": ["Employees", "Attrition rate", "Average salary", "Average tenure", "Gender ratio"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
     },
     {
@@ -474,22 +750,6 @@ projects = [
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
     },
     {
-        "name": "CSR Project Monitoring and Impact Dashboard",
-        "short_name": "CSR Impact",
-        "domain": "CSR Analytics",
-        "role": "Business Analyst",
-        "status": "In Progress",
-        "difficulty": "Advanced",
-        "dataset": "Synthetic CSR project dataset inspired by internship workflows",
-        "tools": ["Excel", "Power BI", "Budget Analysis", "Stakeholder Reporting", "Compliance Tracking"],
-        "problem": "CSR projects need clear tracking across budgets, vendors, beneficiaries, documents, and impact.",
-        "solution": "Build a CSR dashboard for health, education, water supply, and welfare initiatives.",
-        "business_value": "Connects project monitoring, budget control, beneficiary reporting, and compliance tracking.",
-        "pages": ["CSR Portfolio Overview", "Project Category", "Budget and Vendor", "Impact", "Compliance"],
-        "kpis": ["Projects", "Budget used", "Beneficiaries", "Completed projects", "Delayed projects"],
-        "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
-    },
-    {
         "name": "RAG-Based Business Knowledge Assistant",
         "short_name": "Business Knowledge Assistant",
         "domain": "AI Automation",
@@ -507,22 +767,26 @@ projects = [
     }
 ]
 
+# =========================================================
+# EXPERIENCE DATA
+# =========================================================
+
 experience = [
     {
         "role": "Data Analyst",
         "company": "A. F. Ferguson & Co. | PwC Network",
         "duration": "Sep 2025 - Dec 2025",
         "location": "Pakistan",
-        "details": "Prepared, cleaned, and structured multi-source datasets for KPI tracking, HR reporting, payroll data accuracy, and operational analysis. Supported Excel and SQL reporting workflows, built dashboards and analytical summaries, and conducted data validation checks.",
-        "tags": ["Data Cleaning", "KPI Reporting", "SQL", "Excel", "Dashboards", "Data Validation"]
+        "details": "Prepared, cleaned, and structured multi-source datasets for KPI tracking, HR reporting, payroll data accuracy, and operational analysis. Supported Excel and SQL reporting workflows, built dashboards and analytical summaries, conducted data validation checks, and improved reporting workflows for internal teams.",
+        "tags": ["Data Cleaning", "KPI Reporting", "SQL", "Excel", "Dashboards", "Data Validation", "Reporting Automation"]
     },
     {
         "role": "Community Development Intern",
         "company": "Pakistan Petroleum Limited",
         "duration": "Jul 2025 - Aug 2025",
         "location": "Karachi, Pakistan",
-        "details": "Supported CSR and community development projects across education, health, water supply, and welfare initiatives. Prepared Excel-based budget sheets, cost estimates, operational records, project trackers, documentation packs, and stakeholder follow-up records.",
-        "tags": ["CSR", "Budgeting", "Documentation", "Stakeholder Coordination", "Reporting", "Project Tracking"]
+        "details": "Supported CSR and community development projects across education, health, water supply, and welfare initiatives. Prepared Excel-based budget sheets, cost estimates, operational records, project trackers, documentation packs, stakeholder follow-up records, and management reporting updates.",
+        "tags": ["CSR", "Budgeting", "Documentation", "Stakeholder Coordination", "Reporting", "Project Tracking", "Compliance"]
     },
     {
         "role": "Quality Assurance Analyst",
@@ -537,16 +801,16 @@ experience = [
         "company": "Prodigy InfoTech",
         "duration": "Jun 2024 - Aug 2024",
         "location": "Remote",
-        "details": "Completed project-based data science tasks involving data cleaning, exploratory data analysis, visualization, and basic predictive modeling using Python.",
-        "tags": ["Python", "EDA", "Visualization", "Machine Learning", "Pandas", "NumPy"]
+        "details": "Completed project-based data science tasks involving data cleaning, exploratory data analysis, visualization, customer behaviour analysis, decision tree modeling, and business pattern identification using Python.",
+        "tags": ["Python", "EDA", "Visualization", "Machine Learning", "Pandas", "NumPy", "Decision Tree"]
     },
     {
         "role": "Data Science and AI Intern",
         "company": "SYNC INTERN'S",
         "duration": "Mar 2024 - Apr 2024",
         "location": "Remote",
-        "details": "Completed hands-on analytics and AI tasks involving data preparation, customer analysis, experimentation, and business-focused data interpretation.",
-        "tags": ["AI", "Customer Analysis", "Experimentation", "Analytics", "Business Interpretation"]
+        "details": "Completed hands-on analytics and AI tasks involving data preparation, customer analysis, experimentation, uplift testing, and business-focused data interpretation.",
+        "tags": ["AI", "Customer Analysis", "Experimentation", "Analytics", "Business Interpretation", "Uplift Testing"]
     },
     {
         "role": "Marketing Intern",
@@ -558,8 +822,8 @@ experience = [
     },
     {
         "role": "Campus Ambassador",
-        "company": "Paklaunch",
-        "duration": "Jun 2023 - Sep 2023",
+        "company": "PakLaunch",
+        "duration": "Jul 2023 - Sep 2023",
         "location": "Remote",
         "details": "Promoted initiatives through digital outreach, student engagement, event promotion, and community-building activities focused on entrepreneurship and professional development.",
         "tags": ["Community Engagement", "Outreach", "Event Promotion", "Public Speaking", "Communication"]
@@ -567,12 +831,16 @@ experience = [
     {
         "role": "Business Development Intern",
         "company": "GAOTek Inc.",
-        "duration": "Jun 2023 - Sep 2023",
+        "duration": "Jun 2023 - Jul 2023",
         "location": "Remote",
         "details": "Conducted market research, lead generation, competitive analysis, market mapping, and research on potential clients and industry segments.",
         "tags": ["Market Research", "Lead Generation", "Competitive Analysis", "Business Development", "Client Research"]
     }
 ]
+
+# =========================================================
+# CERTIFICATIONS DATA
+# =========================================================
 
 certifications = [
     {"name": "Complete Data Analyst Bootcamp From Basics To Advanced", "issuer": "Udemy", "category": "Data Analytics"},
@@ -587,74 +855,79 @@ certifications = [
     {"name": "SQL for Data Science", "issuer": "University of California, Davis", "category": "SQL"},
     {"name": "CompTIA Data+", "issuer": "CompTIA", "category": "Data Analytics"},
     {"name": "Google Data Analytics", "issuer": "Google", "category": "Data Analytics"},
-    {"name": "CS50 Python", "issuer": "Harvard / CS50", "category": "Python"},
+    {"name": "CS50 Python", "issuer": "Harvard CS50", "category": "Python"},
     {"name": "Python 101", "issuer": "IBM", "category": "Python"},
     {"name": "Intermediate SQL", "issuer": "DataCamp", "category": "SQL"},
     {"name": "MySQL", "issuer": "Analyst Builder", "category": "SQL"},
     {"name": "PostgreSQL", "issuer": "Codecademy", "category": "SQL"},
     {"name": "Excel for Business Analysts", "issuer": "Online Course", "category": "Excel"},
     {"name": "Data Analyst Associate", "issuer": "Online Course", "category": "Data Analytics"},
-    {"name": "Power BI Desktop", "issuer": "Online Course", "category": "Power BI"}
+    {"name": "Power BI Desktop", "issuer": "Online Course", "category": "Power BI"},
+    {"name": "Business Process Management", "issuer": "Online Course", "category": "Business Analysis"},
+    {"name": "SEO", "issuer": "Online Course", "category": "Digital Marketing"},
+    {"name": "Exploratory Data Analysis", "issuer": "Online Course", "category": "Data Analytics"}
 ]
+
+# =========================================================
+# SKILLS DATA
+# =========================================================
 
 skills = [
     {"Skill": "Python", "Category": "Data Analytics", "Strength": 76},
-    {"Skill": "SQL", "Category": "Data Analytics", "Strength": 70},
-    {"Skill": "Power BI", "Category": "Dashboarding", "Strength": 74},
-    {"Skill": "Excel", "Category": "Business Reporting", "Strength": 86},
+    {"Skill": "SQL", "Category": "Data Analytics", "Strength": 72},
+    {"Skill": "Power BI", "Category": "Dashboarding", "Strength": 75},
+    {"Skill": "Excel", "Category": "Business Reporting", "Strength": 88},
     {"Skill": "DAX", "Category": "Dashboarding", "Strength": 58},
-    {"Skill": "Pandas", "Category": "Data Analytics", "Strength": 78},
-    {"Skill": "Scikit-learn", "Category": "Machine Learning", "Strength": 63},
-    {"Skill": "Business Analysis", "Category": "Business Analysis", "Strength": 80},
-    {"Skill": "Process Mapping", "Category": "Business Analysis", "Strength": 78},
-    {"Skill": "Data Cleaning", "Category": "Data Quality", "Strength": 82},
-    {"Skill": "KPI Reporting", "Category": "Business Reporting", "Strength": 78},
-    {"Skill": "Financial Analysis", "Category": "Finance Analytics", "Strength": 68},
-    {"Skill": "HR Analytics", "Category": "HR Analytics", "Strength": 70},
-    {"Skill": "Marketing Analytics", "Category": "Marketing Analytics", "Strength": 66},
-    {"Skill": "Customer Analytics", "Category": "Customer Analytics", "Strength": 68},
-    {"Skill": "CSR Analytics", "Category": "CSR Analytics", "Strength": 82},
-    {"Skill": "Inventory Analytics", "Category": "Operations Analytics", "Strength": 60},
-    {"Skill": "AI Automation", "Category": "AI Automation", "Strength": 58},
-    {"Skill": "LLM Tools", "Category": "AI Automation", "Strength": 52},
-    {"Skill": "RAG Concepts", "Category": "AI Automation", "Strength": 48},
-    {"Skill": "APIs", "Category": "AI Automation", "Strength": 50},
+    {"Skill": "Pandas", "Category": "Data Analytics", "Strength": 80},
+    {"Skill": "NumPy", "Category": "Data Analytics", "Strength": 74},
+    {"Skill": "Matplotlib", "Category": "Visualization", "Strength": 72},
+    {"Skill": "Seaborn", "Category": "Visualization", "Strength": 70},
+    {"Skill": "Plotly", "Category": "Visualization", "Strength": 60},
+    {"Skill": "Scikit-learn", "Category": "Machine Learning", "Strength": 64},
+    {"Skill": "Linear Regression", "Category": "Machine Learning", "Strength": 68},
+    {"Skill": "Random Forest", "Category": "Machine Learning", "Strength": 62},
+    {"Skill": "Classification", "Category": "Machine Learning", "Strength": 62},
+    {"Skill": "Clustering", "Category": "Machine Learning", "Strength": 60},
+    {"Skill": "Model Evaluation", "Category": "Machine Learning", "Strength": 64},
+    {"Skill": "Business Analysis", "Category": "Business Analysis", "Strength": 82},
+    {"Skill": "Process Mapping", "Category": "Business Analysis", "Strength": 80},
+    {"Skill": "Requirements Thinking", "Category": "Business Analysis", "Strength": 72},
+    {"Skill": "Documentation", "Category": "Business Analysis", "Strength": 86},
     {"Skill": "Stakeholder Reporting", "Category": "Business Analysis", "Strength": 84},
-    {"Skill": "Documentation", "Category": "Business Analysis", "Strength": 86}
+    {"Skill": "Project Tracking", "Category": "Business Analysis", "Strength": 84},
+    {"Skill": "Budget Tracking", "Category": "Business Reporting", "Strength": 86},
+    {"Skill": "KPI Reporting", "Category": "Business Reporting", "Strength": 80},
+    {"Skill": "Data Cleaning", "Category": "Data Quality", "Strength": 84},
+    {"Skill": "Data Validation", "Category": "Data Quality", "Strength": 82},
+    {"Skill": "EDA", "Category": "Data Analytics", "Strength": 82},
+    {"Skill": "Financial Analysis", "Category": "Finance Analytics", "Strength": 68},
+    {"Skill": "Accounting Basics", "Category": "Finance Analytics", "Strength": 70},
+    {"Skill": "Cash Flow Analysis", "Category": "Finance Analytics", "Strength": 62},
+    {"Skill": "HR Analytics", "Category": "HR Analytics", "Strength": 72},
+    {"Skill": "Marketing Analytics", "Category": "Marketing Analytics", "Strength": 68},
+    {"Skill": "Customer Analytics", "Category": "Customer Analytics", "Strength": 70},
+    {"Skill": "CSR Analytics", "Category": "CSR Analytics", "Strength": 84},
+    {"Skill": "Inventory Analytics", "Category": "Operations Analytics", "Strength": 60},
+    {"Skill": "Public Data Analysis", "Category": "Public Data Analytics", "Strength": 68},
+    {"Skill": "Geospatial Analytics", "Category": "Public Data Analytics", "Strength": 50},
+    {"Skill": "AI Automation", "Category": "AI Automation", "Strength": 58},
+    {"Skill": "n8n", "Category": "AI Automation", "Strength": 55},
+    {"Skill": "LLM Tools", "Category": "AI Automation", "Strength": 54},
+    {"Skill": "RAG Concepts", "Category": "AI Automation", "Strength": 50},
+    {"Skill": "APIs", "Category": "AI Automation", "Strength": 52},
+    {"Skill": "Vector Databases", "Category": "AI Automation", "Strength": 40},
+    {"Skill": "QA Testing", "Category": "Quality Assurance", "Strength": 74},
+    {"Skill": "Bug Reporting", "Category": "Quality Assurance", "Strength": 76},
+    {"Skill": "Workflow Review", "Category": "Quality Assurance", "Strength": 76},
+    {"Skill": "Digital Marketing", "Category": "Marketing", "Strength": 64},
+    {"Skill": "SEO", "Category": "Marketing", "Strength": 60},
+    {"Skill": "Market Research", "Category": "Business Development", "Strength": 68},
+    {"Skill": "Lead Generation", "Category": "Business Development", "Strength": 62}
 ]
 
-evidence = [
-    {
-        "claim": "Data cleaning and business reporting",
-        "proof": "Prepared and structured multi-source datasets for reporting and KPI tracking.",
-        "source": "A. F. Ferguson Data Analyst role",
-        "confidence": "Strong"
-    },
-    {
-        "claim": "Dashboard and KPI reporting",
-        "proof": "Built HR dashboard work and analytical summaries for management-style reporting.",
-        "source": "HR Analytics, A. F. Ferguson role",
-        "confidence": "Strong"
-    },
-    {
-        "claim": "Business process documentation",
-        "proof": "Created CSR trackers, documentation packs, budget sheets, and status records.",
-        "source": "Pakistan Petroleum Limited internship",
-        "confidence": "Strong"
-    },
-    {
-        "claim": "Machine learning for business use cases",
-        "proof": "Built prediction and modeling projects using Python, Linear Regression, Random Forest, and classification workflows.",
-        "source": "Portfolio ML projects",
-        "confidence": "Developing"
-    },
-    {
-        "claim": "AI automation capability",
-        "proof": "Learning n8n, APIs, LLM workflows, RAG concepts, and AI automation dashboards.",
-        "source": "Certifications and planned AI project",
-        "confidence": "Developing"
-    }
-]
+# =========================================================
+# EDUCATION DATA
+# =========================================================
 
 education = [
     {
@@ -671,6 +944,55 @@ education = [
     }
 ]
 
+# =========================================================
+# EVIDENCE DATA
+# =========================================================
+
+evidence = [
+    {
+        "claim": "Data cleaning and business reporting",
+        "proof": "Prepared and structured multi-source datasets for reporting and KPI tracking.",
+        "source": "A. F. Ferguson Data Analyst role",
+        "confidence": "Strong"
+    },
+    {
+        "claim": "Dashboard and KPI reporting",
+        "proof": "Built HR dashboard work and analytical summaries for management-style reporting.",
+        "source": "HR Analytics, A. F. Ferguson role",
+        "confidence": "Strong"
+    },
+    {
+        "claim": "CSR project tracking and budget reporting",
+        "proof": "Created CSR trackers, documentation packs, budget sheets, and status records.",
+        "source": "Pakistan Petroleum Limited internship",
+        "confidence": "Strong"
+    },
+    {
+        "claim": "Machine learning for business use cases",
+        "proof": "Built prediction and modeling projects using Python, Linear Regression, Random Forest, and classification workflows.",
+        "source": "Portfolio ML projects",
+        "confidence": "Developing"
+    },
+    {
+        "claim": "AI automation capability",
+        "proof": "Learning n8n, APIs, LLM workflows, RAG concepts, and AI automation dashboards.",
+        "source": "Certifications and planned AI project",
+        "confidence": "Developing"
+    },
+    {
+        "claim": "Quality assurance and product workflow review",
+        "proof": "Tested web product features, documented bugs, reviewed workflow issues, and monitored content quality.",
+        "source": "Oigetit QA Analyst role",
+        "confidence": "Strong"
+    },
+    {
+        "claim": "Business development and market research",
+        "proof": "Conducted lead generation, competitor research, market mapping, and client research.",
+        "source": "GAOTek Business Development internship",
+        "confidence": "Strong"
+    }
+]
+
 project_df = pd.DataFrame(projects)
 experience_df = pd.DataFrame(experience)
 cert_df = pd.DataFrame(certifications)
@@ -679,7 +1001,7 @@ evidence_df = pd.DataFrame(evidence)
 education_df = pd.DataFrame(education)
 
 # =========================================================
-# HELPERS
+# HELPER FUNCTIONS
 # =========================================================
 
 def tags_html(tags, color="blue"):
@@ -690,7 +1012,9 @@ def tags_html(tags, color="blue"):
         "orange": "badge-orange",
         "grey": "badge-grey"
     }.get(color, "badge")
+
     return "".join([f'<span class="{klass}">{tag}</span>' for tag in tags])
+
 
 def status_badge(status):
     if status == "Completed":
@@ -702,6 +1026,7 @@ def status_badge(status):
     if status == "Planned":
         return "badge-grey"
     return "badge"
+
 
 def plotly_layout(fig):
     fig.update_layout(
@@ -718,17 +1043,17 @@ def plotly_layout(fig):
 
 with st.sidebar:
     st.markdown("### Rubina Ahmed Mahar")
-    st.caption("Business Analytics Portfolio")
+    st.caption("Data Analytics | Business Analysis | AI Automation")
 
     selected = option_menu(
         menu_title=None,
         options=[
-            "Overview",
-            "Projects",
-            "Role Match",
-            "Evidence",
-            "Skills",
-            "Experience",
+            "Home",
+            "Portfolio Projects",
+            "Role Fit",
+            "Proof of Skills",
+            "Technical Skills",
+            "Work Experience",
             "Certifications",
             "Education",
             "Contact"
@@ -781,23 +1106,22 @@ with st.sidebar:
     )
 
 # =========================================================
-# OVERVIEW
+# HOME PAGE
 # =========================================================
 
-if selected == "Overview":
+if selected == "Home":
     st.markdown(
         """
         <div class="hero">
             <div class="hero-content">
-                <div class="eyebrow">Interactive Portfolio</div>
-                <div class="hero-title">Business Analytics Portfolio</div>
+                <div class="eyebrow">Portfolio Dashboard</div>
+                <div class="hero-title">Business Analytics and AI Portfolio</div>
                 <div class="hero-subtitle">
-                    Data Analytics, ICT Business Analysis, Dashboard Reporting, and AI Automation projects.
+                    Data Analytics, Business Analysis, Dashboard Reporting, Machine Learning, and AI Automation projects.
                 </div>
                 <p class="hero-text">
-                    This portfolio brings together completed work, in-progress builds, and planned case studies.
-                    Each project is designed around a practical business problem, with clear dashboards, KPIs,
-                    tools, business value, and role alignment.
+                    A professional portfolio dashboard showcasing completed work, current builds, and planned case studies.
+                    Each project is organised by business problem, tools, KPIs, dashboard plan, and role relevance.
                 </p>
                 <span class="badge">Python</span>
                 <span class="badge">SQL</span>
@@ -806,7 +1130,7 @@ if selected == "Overview":
                 <span class="badge-purple">Business Analysis</span>
                 <span class="badge-purple">Process Mapping</span>
                 <span class="badge-green">AI Automation</span>
-                <span class="badge-green">RAG</span>
+                <span class="badge-green">Machine Learning</span>
             </div>
         </div>
         """,
@@ -818,7 +1142,7 @@ if selected == "Overview":
     m1, m2, m3, m4 = st.columns(4)
     m1.metric("Portfolio Projects", len(project_df))
     m2.metric("Business Domains", project_df["domain"].nunique())
-    m3.metric("Experience Roles", len(experience_df))
+    m3.metric("Work Experiences", len(experience_df))
     m4.metric("Certifications", len(cert_df))
 
     st.markdown('<div class="section-title">Portfolio Summary</div>', unsafe_allow_html=True)
@@ -828,6 +1152,7 @@ if selected == "Overview":
     with c1:
         domain_count = project_df["domain"].value_counts().reset_index()
         domain_count.columns = ["Domain", "Projects"]
+
         fig = px.bar(
             domain_count,
             x="Domain",
@@ -836,12 +1161,14 @@ if selected == "Overview":
             title="Projects by Domain",
             template="plotly_dark"
         )
+
         fig.update_layout(showlegend=False)
         st.plotly_chart(plotly_layout(fig), use_container_width=True)
 
     with c2:
         status_count = project_df["status"].value_counts().reset_index()
         status_count.columns = ["Status", "Projects"]
+
         fig2 = px.pie(
             status_count,
             names="Status",
@@ -850,11 +1177,18 @@ if selected == "Overview":
             template="plotly_dark",
             hole=0.58
         )
+
         st.plotly_chart(plotly_layout(fig2), use_container_width=True)
 
     st.markdown('<div class="section-title">Featured Projects</div>', unsafe_allow_html=True)
 
-    featured_names = ["CSR Impact", "Customer Retention", "Process Automation", "HR Analytics"]
+    featured_names = [
+        "AI Job Market",
+        "HR Analytics",
+        "CSR Impact",
+        "Process Automation"
+    ]
+
     featured = project_df[project_df["short_name"].isin(featured_names)]
 
     cols = st.columns(4)
@@ -874,26 +1208,50 @@ if selected == "Overview":
             )
 
 # =========================================================
-# PROJECTS
+# PORTFOLIO PROJECTS PAGE
 # =========================================================
 
-elif selected == "Projects":
-    st.markdown('<div class="section-title">Projects</div>', unsafe_allow_html=True)
-    st.write("Filter projects by role, domain, status, difficulty, or keyword.")
+elif selected == "Portfolio Projects":
+    st.markdown('<div class="section-title">Portfolio Projects</div>', unsafe_allow_html=True)
+    st.write("Explore project case studies by target role, business domain, project status, difficulty, or keyword.")
 
     f1, f2, f3 = st.columns(3)
+
     with f1:
-        role_filter = st.multiselect("Role focus", sorted(project_df["role"].unique()))
+        role_filter = st.multiselect(
+            "Role focus",
+            sorted(project_df["role"].unique()),
+            placeholder="Select role"
+        )
+
     with f2:
-        domain_filter = st.multiselect("Business domain", sorted(project_df["domain"].unique()))
+        domain_filter = st.multiselect(
+            "Business domain",
+            sorted(project_df["domain"].unique()),
+            placeholder="Select domain"
+        )
+
     with f3:
-        status_filter = st.multiselect("Project status", sorted(project_df["status"].unique()))
+        status_filter = st.multiselect(
+            "Project status",
+            sorted(project_df["status"].unique()),
+            placeholder="Select status"
+        )
 
     f4, f5 = st.columns([1, 2])
+
     with f4:
-        difficulty_filter = st.multiselect("Difficulty", sorted(project_df["difficulty"].unique()))
+        difficulty_filter = st.multiselect(
+            "Difficulty",
+            sorted(project_df["difficulty"].unique()),
+            placeholder="Select difficulty"
+        )
+
     with f5:
-        search = st.text_input("Search projects", placeholder="Try AI, HR, finance, churn, CSR, SQL, Power BI")
+        search = st.text_input(
+            "Search projects",
+            placeholder="Search by topic, for example HR, finance, churn, CSR, SQL, Power BI"
+        )
 
     filtered = project_df.copy()
 
@@ -970,11 +1328,11 @@ elif selected == "Projects":
             st.link_button("Open GitHub Repository", project["github"])
 
 # =========================================================
-# ROLE MATCH
+# ROLE FIT PAGE
 # =========================================================
 
-elif selected == "Role Match":
-    st.markdown('<div class="section-title">Role Match</div>', unsafe_allow_html=True)
+elif selected == "Role Fit":
+    st.markdown('<div class="section-title">Role Fit</div>', unsafe_allow_html=True)
     st.write("Select a target role to see the most relevant portfolio projects.")
 
     role = st.selectbox(
@@ -1026,16 +1384,17 @@ elif selected == "Role Match":
         )
 
 # =========================================================
-# EVIDENCE
+# PROOF OF SKILLS PAGE
 # =========================================================
 
-elif selected == "Evidence":
-    st.markdown('<div class="section-title">Evidence</div>', unsafe_allow_html=True)
+elif selected == "Proof of Skills":
+    st.markdown('<div class="section-title">Proof of Skills</div>', unsafe_allow_html=True)
     st.write("This page connects portfolio claims with real proof from experience, projects, or learning.")
 
     confidence_filter = st.multiselect(
         "Confidence level",
-        sorted(evidence_df["confidence"].unique())
+        sorted(evidence_df["confidence"].unique()),
+        placeholder="Select confidence level"
     )
 
     ev = evidence_df.copy()
@@ -1069,15 +1428,16 @@ elif selected == "Evidence":
     st.plotly_chart(plotly_layout(fig), use_container_width=True)
 
 # =========================================================
-# SKILLS
+# TECHNICAL SKILLS PAGE
 # =========================================================
 
-elif selected == "Skills":
-    st.markdown('<div class="section-title">Skills</div>', unsafe_allow_html=True)
+elif selected == "Technical Skills":
+    st.markdown('<div class="section-title">Technical Skills</div>', unsafe_allow_html=True)
 
     category_filter = st.multiselect(
         "Skill category",
-        sorted(skills_df["Category"].unique())
+        sorted(skills_df["Category"].unique()),
+        placeholder="Select skill category"
     )
 
     skill_view = skills_df.copy()
@@ -1125,11 +1485,11 @@ elif selected == "Skills":
         st.dataframe(skill_view, use_container_width=True, hide_index=True)
 
 # =========================================================
-# EXPERIENCE
+# WORK EXPERIENCE PAGE
 # =========================================================
 
-elif selected == "Experience":
-    st.markdown('<div class="section-title">Experience</div>', unsafe_allow_html=True)
+elif selected == "Work Experience":
+    st.markdown('<div class="section-title">Work Experience</div>', unsafe_allow_html=True)
 
     for item in experience:
         st.markdown(
@@ -1146,7 +1506,7 @@ elif selected == "Experience":
         )
 
 # =========================================================
-# CERTIFICATIONS
+# CERTIFICATIONS PAGE
 # =========================================================
 
 elif selected == "Certifications":
@@ -1154,12 +1514,14 @@ elif selected == "Certifications":
 
     cert_category = st.multiselect(
         "Certification category",
-        sorted(cert_df["category"].unique())
+        sorted(cert_df["category"].unique()),
+        placeholder="Select category"
     )
 
     issuer_filter = st.multiselect(
         "Issuer",
-        sorted(cert_df["issuer"].unique())
+        sorted(cert_df["issuer"].unique()),
+        placeholder="Select issuer"
     )
 
     cert_view = cert_df.copy()
@@ -1173,14 +1535,18 @@ elif selected == "Certifications":
     c1, c2 = st.columns([1.1, 1])
 
     with c1:
+        cert_count = cert_df["category"].value_counts().reset_index()
+        cert_count.columns = ["Category", "Count"]
+
         fig = px.bar(
-            cert_df["category"].value_counts().reset_index(),
-            x="category",
-            y="count",
-            color="category",
+            cert_count,
+            x="Category",
+            y="Count",
+            color="Category",
             title="Certifications by Category",
             template="plotly_dark"
         )
+
         fig.update_layout(showlegend=False)
         st.plotly_chart(plotly_layout(fig), use_container_width=True)
 
@@ -1192,6 +1558,7 @@ elif selected == "Certifications":
             template="plotly_dark",
             hole=0.55
         )
+
         st.plotly_chart(plotly_layout(fig2), use_container_width=True)
 
     st.markdown(f"Showing **{len(cert_view)}** certification(s).")
@@ -1215,7 +1582,7 @@ elif selected == "Certifications":
                 )
 
 # =========================================================
-# EDUCATION
+# EDUCATION PAGE
 # =========================================================
 
 elif selected == "Education":
@@ -1235,7 +1602,7 @@ elif selected == "Education":
         )
 
 # =========================================================
-# CONTACT
+# CONTACT PAGE
 # =========================================================
 
 elif selected == "Contact":
