@@ -266,10 +266,10 @@ st.markdown(
         font-weight: 900 !important;
     }
 
-    /* Widget visibility fix */
     .stSelectbox label,
     .stMultiSelect label,
-    .stTextInput label {
+    .stTextInput label,
+    .stSlider label {
         color: #f8fafc !important;
         font-weight: 800 !important;
     }
@@ -1050,6 +1050,7 @@ with st.sidebar:
         options=[
             "Home",
             "Portfolio Projects",
+            "Interactive Demo",
             "Role Fit",
             "Proof of Skills",
             "Technical Skills",
@@ -1059,7 +1060,7 @@ with st.sidebar:
             "Contact"
         ],
         icons=[
-            "house", "grid", "person-check", "shield-check",
+            "house", "grid", "calculator", "person-check", "shield-check",
             "bar-chart", "briefcase", "award", "mortarboard", "envelope"
         ],
         default_index=0,
@@ -1326,6 +1327,226 @@ elif selected == "Portfolio Projects":
                     st.markdown(f"- {tool}")
 
             st.link_button("Open GitHub Repository", project["github"])
+
+# =========================================================
+# INTERACTIVE DEMO PAGE
+# =========================================================
+
+elif selected == "Interactive Demo":
+    st.markdown('<div class="section-title">Interactive Demo</div>', unsafe_allow_html=True)
+
+    st.write(
+        "This section shows a working business analytics calculator. "
+        "It demonstrates how manual process data can be converted into automation impact estimates."
+    )
+
+    st.markdown(
+        """
+        <div class="info-panel">
+            <h2>Automation Savings Calculator</h2>
+            <p class="subtle">
+                Estimate how much time and cost a business could save by automating a repetitive manual workflow.
+                This fits business process automation, ICT business analysis, and AI automation projects.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown("")
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.markdown("### Process Inputs")
+
+        monthly_cases = st.slider(
+            "Number of cases processed per month",
+            min_value=50,
+            max_value=10000,
+            value=1200,
+            step=50
+        )
+
+        minutes_per_case = st.slider(
+            "Average manual minutes per case",
+            min_value=1,
+            max_value=120,
+            value=18,
+            step=1
+        )
+
+        hourly_cost = st.slider(
+            "Average staff cost per hour",
+            min_value=10,
+            max_value=150,
+            value=35,
+            step=5
+        )
+
+        automation_rate = st.slider(
+            "Expected automation percentage",
+            min_value=5,
+            max_value=95,
+            value=45,
+            step=5
+        )
+
+        error_rate_before = st.slider(
+            "Current manual error rate",
+            min_value=1,
+            max_value=40,
+            value=12,
+            step=1
+        )
+
+        error_reduction = st.slider(
+            "Expected error reduction after automation",
+            min_value=5,
+            max_value=90,
+            value=50,
+            step=5
+        )
+
+    total_manual_hours = (monthly_cases * minutes_per_case) / 60
+    automated_hours = total_manual_hours * (automation_rate / 100)
+    remaining_manual_hours = total_manual_hours - automated_hours
+
+    monthly_cost_before = total_manual_hours * hourly_cost
+    monthly_cost_saved = automated_hours * hourly_cost
+    annual_cost_saved = monthly_cost_saved * 12
+
+    error_rate_after = error_rate_before * (1 - error_reduction / 100)
+    errors_before = monthly_cases * (error_rate_before / 100)
+    errors_after = monthly_cases * (error_rate_after / 100)
+    errors_reduced = errors_before - errors_after
+
+    if automation_rate >= 70:
+        impact_level = "High automation impact"
+        impact_badge = "badge-green"
+    elif automation_rate >= 40:
+        impact_level = "Medium automation impact"
+        impact_badge = "badge-orange"
+    else:
+        impact_level = "Early automation opportunity"
+        impact_badge = "badge-purple"
+
+    with col2:
+        st.markdown("### Estimated Impact")
+
+        m1, m2 = st.columns(2)
+        m1.metric("Manual Hours / Month", f"{total_manual_hours:,.0f}")
+        m2.metric("Hours Saved / Month", f"{automated_hours:,.0f}")
+
+        m3, m4 = st.columns(2)
+        m3.metric("Monthly Cost Saved", f"${monthly_cost_saved:,.0f}")
+        m4.metric("Annual Cost Saved", f"${annual_cost_saved:,.0f}")
+
+        m5, m6 = st.columns(2)
+        m5.metric("Errors Reduced / Month", f"{errors_reduced:,.0f}")
+        m6.metric("Remaining Manual Hours", f"{remaining_manual_hours:,.0f}")
+
+        st.markdown(
+            f"""
+            <div class="project-card">
+                <h3>Automation Recommendation</h3>
+                <p class="subtle">
+                    Based on the selected assumptions, this process has an estimated monthly saving of
+                    <b>${monthly_cost_saved:,.0f}</b> and an estimated annual saving of
+                    <b>${annual_cost_saved:,.0f}</b>.
+                </p>
+                <span class="{impact_badge}">{impact_level}</span>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    st.markdown('<div class="section-title">Before vs After Automation</div>', unsafe_allow_html=True)
+
+    comparison_data = pd.DataFrame({
+        "Metric": [
+            "Monthly manual hours",
+            "Monthly labour cost",
+            "Error rate",
+            "Estimated errors per month"
+        ],
+        "Before Automation": [
+            round(total_manual_hours, 2),
+            round(monthly_cost_before, 2),
+            round(error_rate_before, 2),
+            round(errors_before, 2)
+        ],
+        "After Automation": [
+            round(remaining_manual_hours, 2),
+            round(monthly_cost_before - monthly_cost_saved, 2),
+            round(error_rate_after, 2),
+            round(errors_after, 2)
+        ]
+    })
+
+    st.dataframe(
+        comparison_data,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Metric": st.column_config.TextColumn("Metric", width="medium"),
+            "Before Automation": st.column_config.NumberColumn("Before Automation", format="%.2f"),
+            "After Automation": st.column_config.NumberColumn("After Automation", format="%.2f"),
+        }
+    )
+
+    fig = px.bar(
+        comparison_data,
+        x="Metric",
+        y=["Before Automation", "After Automation"],
+        barmode="group",
+        title="Before vs After Automation Comparison",
+        template="plotly_dark"
+    )
+
+    st.plotly_chart(plotly_layout(fig), use_container_width=True)
+
+    st.markdown('<div class="section-title">Business Analyst Notes</div>', unsafe_allow_html=True)
+
+    with st.expander("How this connects to business analysis"):
+        st.markdown(
+            """
+            This demo shows how a business analyst can translate a manual workflow into measurable improvement areas.
+
+            It covers:
+
+            - current process volume
+            - time per transaction
+            - labour cost
+            - automation opportunity
+            - error reduction
+            - before vs after comparison
+            - estimated financial impact
+            """
+        )
+
+    with st.expander("How this connects to AI automation"):
+        st.markdown(
+            """
+            This type of calculator can be connected to an AI automation project where repetitive tasks are handled through:
+
+            - rule-based automation
+            - document extraction
+            - workflow routing
+            - approval reminders
+            - ticket classification
+            - AI recommendations
+            """
+        )
+
+    with st.expander("How to explain this in an interview"):
+        st.markdown(
+            """
+            I built an automation savings calculator to show how manual process data can be converted into business impact.
+            The user can change process volume, time per case, labour cost, automation percentage, and error reduction.
+            The app then calculates time saved, cost saved, remaining manual work, and before-after improvement.
+            """
+        )
 
 # =========================================================
 # ROLE FIT PAGE
