@@ -1111,25 +1111,25 @@ if selected == "Home":
     st.markdown(
         """
         <div class="hero">
-            <div class="hero-content">
-                <div class="eyebrow">ICT Business Analyst | Data Analytics | AI Automation</div>
-                <div class="hero-title">Rubina Ahmed Mahar</div>
-                <div class="hero-subtitle">
-                    SQL, Python, Power BI, Excel, LLMs, RAG, APIs, Cloud
-                </div>
-                <p class="hero-text">
-                    Portfolio of analytics, reporting, business systems, and automation projects.
-                </p>
-                <span class="badge">Python</span>
-                <span class="badge">SQL</span>
-                <span class="badge">Power BI</span>
-                <span class="badge">Excel</span>
-                <span class="badge-purple">Business Analysis</span>
-                <span class="badge-purple">Business Systems</span>
-                <span class="badge-green">AI Automation</span>
-                <span class="badge-green">Machine Learning</span>
-            </div>
+    <div class="hero-content">
+        <div class="eyebrow">Business Analyst | Data Analytics | AI Automation</div>
+        <div class="hero-title">Rubina Ahmed Mahar</div>
+        <div class="hero-subtitle">
+            SQL, Python, Power BI, Excel, Machine Learning, LLMs, RAG, APIs, Cloud, Automation
         </div>
+        <p class="hero-text">
+            A collection of projects demonstrating analytical thinking, dashboard development, business reporting, and automation workflows.
+        </p>
+        <span class="badge">Python</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">Excel</span>
+        <span class="badge-purple">Business Analysis</span>
+        <span class="badge-purple">Business Systems</span>
+        <span class="badge-green">AI Automation</span>
+        <span class="badge-green">Machine Learning</span>
+    </div>
+</div>
         """,
         unsafe_allow_html=True
     )
