@@ -392,9 +392,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Global data and AI job market dataset",
         "tools": ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Machine Learning"],
-        "problem": "Students and early-career professionals need to understand job market trends, salaries, and skill demand in data and AI roles.",
-        "solution": "Analyze global job market patterns and build salary prediction models using machine learning.",
-        "business_value": "Career planning, salary insight, and role-demand intelligence.",
+        "problem": "I wanted to understand salary patterns, role demand, and skill trends across data and AI jobs.",
+        "work": "I cleaned and explored a global job market dataset, analysed salary trends, and trained machine learning models to estimate salary outcomes.",
+        "value": "This project helped me connect labour market data with career planning, salary insight, and skill-demand analysis.",
         "pages": ["Market Overview", "Salary Analysis", "Role and Skill Trends", "Prediction Model", "Recommendations"],
         "kpis": ["Average salary", "Top roles", "Top skills", "Salary by region", "Model performance"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -408,9 +408,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "HR analytics sample dataset",
         "tools": ["Power BI", "Excel", "HR Metrics", "Dashboard Design", "Data Cleaning"],
-        "problem": "HR teams need clear visibility into employee structure, attrition, hiring, and workforce metrics.",
-        "solution": "Build a Power BI dashboard to analyse workforce demographics, department metrics, and employee trends.",
-        "business_value": "HR reporting, workforce planning, and management decision-making.",
+        "problem": "I worked on HR-style reporting where employee structure, attrition, and workforce metrics needed to be easier to review.",
+        "work": "I prepared the HR dataset and created a Power BI dashboard covering workforce demographics, department metrics, and employee trends.",
+        "value": "The dashboard presents HR data in a format suitable for workforce planning and management reporting.",
         "pages": ["Workforce Overview", "Attrition Analysis", "Department View", "Employee Insights"],
         "kpis": ["Total employees", "Attrition rate", "Average salary", "Average tenure", "Department headcount"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -424,9 +424,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Project tracking workbook",
         "tools": ["Excel", "Project Tracking", "Status Reporting", "Data Validation", "Conditional Formatting"],
-        "problem": "Managers need a simple way to track project status, owners, timelines, delays, and completion progress.",
-        "solution": "Create an Excel-based tracker for project monitoring, task ownership, deadlines, and reporting.",
-        "business_value": "Project visibility, follow-up, accountability, and reporting discipline.",
+        "problem": "I wanted a simple project tracker for tasks, owners, deadlines, delays, and progress updates.",
+        "work": "I created an Excel-based tracker with status logic, task ownership, deadlines, progress indicators, and reporting views.",
+        "value": "The tracker supports clearer project follow-up, accountability, and reporting discipline.",
         "pages": ["Project Overview", "Task Tracker", "Status Summary", "Risk and Delay View"],
         "kpis": ["Total tasks", "Completed tasks", "Delayed tasks", "Pending tasks", "Completion rate"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -440,9 +440,9 @@ projects = [
         "difficulty": "Foundation",
         "dataset": "Python practice datasets",
         "tools": ["Python", "Pandas", "NumPy", "Data Cleaning", "EDA"],
-        "problem": "Raw data needs cleaning, exploration, and transformation before analysis.",
-        "solution": "Use Pandas and NumPy to clean, reshape, summarise, and explore structured datasets.",
-        "business_value": "Practical analytics workflow and data preparation.",
+        "problem": "I wanted to strengthen my foundation in preparing and exploring structured datasets with Python.",
+        "work": "I used Pandas and NumPy to load, clean, reshape, summarise, and explore different practice datasets.",
+        "value": "This project shows my core data preparation and exploratory analysis workflow.",
         "pages": ["Data Loading", "Data Cleaning", "Feature Summary", "Exploratory Analysis"],
         "kpis": ["Rows cleaned", "Missing values", "Duplicate records", "Feature count", "Summary metrics"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -456,9 +456,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Global suicide rates dataset",
         "tools": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-        "problem": "Public health datasets need clear visual analysis to identify vulnerable regions, groups, and trends.",
-        "solution": "Analyze suicide rates across countries, years, age groups, gender, and socioeconomic indicators.",
-        "business_value": "Public health storytelling, policy awareness, and evidence-based discussion.",
+        "problem": "I explored public health data to understand how suicide rates vary across countries, years, age groups, and gender.",
+        "work": "I cleaned the dataset, created visual comparisons, and reviewed patterns across demographic and regional dimensions.",
+        "value": "This project helped me practise sensitive public health storytelling with data.",
         "pages": ["Global Overview", "Country Trends", "Age and Gender Analysis", "Risk Pattern View"],
         "kpis": ["Suicide rate", "Country ranking", "Age group risk", "Gender comparison", "Trend movement"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -472,9 +472,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Global mental health dataset",
         "tools": ["Python", "Pandas", "Visualization", "Scikit-learn", "Modeling"],
-        "problem": "Mental health indicators need structured analysis to reveal patterns across countries and populations.",
-        "solution": "Analyze mental health indicators and apply basic modeling to understand trends and relationships.",
-        "business_value": "Public health insights and research-style analytics.",
+        "problem": "I used mental health indicators to explore country-level patterns and relationships in public health data.",
+        "work": "I cleaned and analysed the dataset, compared indicators across countries, and applied basic modeling to understand relationships.",
+        "value": "The project combines EDA, public health context, and beginner-friendly predictive modeling.",
         "pages": ["Mental Health Overview", "Country Comparison", "Trend Analysis", "Modeling Summary"],
         "kpis": ["Indicator rate", "Country average", "Trend change", "Model score", "Risk pattern"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -488,9 +488,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Heart attack risk dataset",
         "tools": ["Python", "Pandas", "Scikit-learn", "Classification", "EDA"],
-        "problem": "Healthcare datasets need interpretable analysis to understand patient risk patterns.",
-        "solution": "Analyze health indicators and build prediction-focused classification models.",
-        "business_value": "Healthcare analytics, risk analysis, feature interpretation, and predictive modeling.",
+        "problem": "I wanted to understand patient risk patterns using structured healthcare data.",
+        "work": "I explored the dataset, reviewed key health indicators, and trained classification models for heart risk prediction.",
+        "value": "This project shows healthcare analytics, model evaluation, and feature interpretation.",
         "pages": ["Health Overview", "Risk Factors", "Model Results", "Feature Analysis"],
         "kpis": ["Accuracy", "Risk class", "Feature impact", "Patient count", "Prediction score"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -504,9 +504,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Water quality dataset",
         "tools": ["Python", "Pandas", "Matplotlib", "EDA", "Data Quality Checks"],
-        "problem": "Environmental data needs quality checks and trend analysis before it can support decisions.",
-        "solution": "Explore water quality indicators, missing values, trends, and safety-related variables.",
-        "business_value": "Environmental analytics, public data interpretation, and data quality thinking.",
+        "problem": "I explored environmental data to understand water quality indicators and data quality issues.",
+        "work": "I checked missing values, reviewed indicator distributions, created visual summaries, and highlighted safety-related patterns.",
+        "value": "This project shows environmental analytics, EDA, and data quality thinking.",
         "pages": ["Water Quality Overview", "Missing Values", "Indicator Trends", "Safety Summary"],
         "kpis": ["Quality score", "Missing values", "Indicator average", "Risk level", "Trend change"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -520,9 +520,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Spotify user behaviour dataset",
         "tools": ["Python", "Pandas", "Machine Learning", "Pattern Recognition", "EDA"],
-        "problem": "Digital platforms need to understand user behaviour, engagement, and listening patterns.",
-        "solution": "Analyze Spotify user behaviour and identify pattern groups using analytics and ML techniques.",
-        "business_value": "Customer behaviour analysis, segmentation thinking, and product analytics.",
+        "problem": "I explored digital platform data to understand listening behaviour, engagement patterns, and user groups.",
+        "work": "I analysed Spotify user behaviour and identified patterns using EDA and machine learning techniques.",
+        "value": "This project shows customer behaviour analysis, segmentation thinking, and product analytics.",
         "pages": ["User Overview", "Listening Patterns", "Segment Analysis", "Engagement Insights"],
         "kpis": ["Listening frequency", "User segment", "Engagement score", "Top pattern", "Cluster count"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -536,9 +536,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Netflix titles dataset",
         "tools": ["Python", "Pandas", "Visualization", "Content Analytics", "EDA"],
-        "problem": "Streaming platforms need to understand content mix, genre trends, country contribution, and catalogue patterns.",
-        "solution": "Analyze Netflix titles by genre, country, release year, duration, and content type.",
-        "business_value": "Entertainment analytics and business storytelling through content data.",
+        "problem": "I explored a content catalogue dataset to understand trends in Netflix titles, genres, countries, and release years.",
+        "work": "I cleaned the dataset and created analysis views for content type, genre, country, release patterns, and duration.",
+        "value": "This project shows entertainment analytics and business storytelling through content data.",
         "pages": ["Catalogue Overview", "Country Analysis", "Genre Trends", "Duration and Release Patterns"],
         "kpis": ["Total titles", "Movie count", "TV show count", "Top countries", "Top genres"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -552,9 +552,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Global youth job opportunity indicators",
         "tools": ["Python", "Pandas", "Scoring Model", "Visualization", "Business Storytelling"],
-        "problem": "Young professionals need a structured way to compare job opportunity conditions across countries.",
-        "solution": "Create a scoring system to compare countries based on employment and opportunity indicators.",
-        "business_value": "Labour market analysis, index building, and decision-support thinking.",
+        "problem": "I wanted to compare youth employment opportunity indicators across countries in a structured way.",
+        "work": "I created a scoring approach, compared countries, and built visual summaries for employment and opportunity indicators.",
+        "value": "This project shows labour market analysis, index building, and decision-support thinking.",
         "pages": ["Country Ranking", "Opportunity Score", "Regional View", "Recommendation Summary"],
         "kpis": ["Opportunity score", "Country rank", "Employment indicator", "Risk level", "Recommendation"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -568,9 +568,9 @@ projects = [
         "difficulty": "Foundation",
         "dataset": "Accounting and financial statement workbook",
         "tools": ["Excel", "Accounting", "Financial Statements", "Formulas", "Reporting"],
-        "problem": "Businesses need structured financial statements to understand financial position and performance.",
-        "solution": "Prepare financial statement formats and calculations using Excel.",
-        "business_value": "Accounting knowledge, Excel reporting, and finance data structuring.",
+        "problem": "I worked on financial statement preparation to strengthen my accounting and Excel reporting foundation.",
+        "work": "I prepared financial statement formats and calculations in Excel using structured accounting data.",
+        "value": "This project shows accounting knowledge, Excel reporting, and finance data structuring.",
         "pages": ["Income Statement", "Balance Sheet", "Cash Flow", "Summary"],
         "kpis": ["Revenue", "Expenses", "Profit", "Assets", "Liabilities"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -584,9 +584,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Medical insurance cost dataset",
         "tools": ["Python", "Regression", "Pandas", "Scikit-learn", "EDA"],
-        "problem": "Healthcare cost data needs analysis to understand how patient attributes influence insurance charges.",
-        "solution": "Build regression models to predict medical cost and explain key cost drivers.",
-        "business_value": "Regression modeling, feature interpretation, and healthcare analytics.",
+        "problem": "I am working on healthcare cost data to understand how patient attributes affect insurance charges.",
+        "work": "I am preparing regression models to estimate medical cost and explain the strongest cost drivers.",
+        "value": "This project is helping me strengthen regression modeling and healthcare analytics.",
         "pages": ["Cost Overview", "Feature Analysis", "Regression Model", "Prediction Results"],
         "kpis": ["MAE", "MSE", "R2 score", "Average charge", "Top cost driver"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -600,9 +600,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Advanced Soybean Agricultural Dataset",
         "tools": ["Python", "Linear Regression", "Random Forest", "GridSearchCV", "Feature Importance"],
-        "problem": "Agricultural datasets can help predict crop characteristics and improve analysis of plant traits.",
-        "solution": "Build regression models to predict soybean sugar content and compare model performance.",
-        "business_value": "End-to-end ML workflow, regression, model evaluation, and feature importance.",
+        "problem": "I am working with agricultural data to predict soybean sugar content from plant and environmental features.",
+        "work": "I am comparing regression models, reviewing feature importance, and documenting the full machine learning workflow.",
+        "value": "This project strengthens my regression, model evaluation, and explainability skills.",
         "pages": ["Data Cleaning", "EDA", "Model Comparison", "Feature Importance", "Residual Analysis"],
         "kpis": ["MSE", "R2 score", "Cross-validation score", "Feature importance", "Prediction error"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -616,9 +616,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Technical support or customer service dataset",
         "tools": ["Python", "K-Means", "Elbow Method", "Silhouette Score", "Clustering"],
-        "problem": "Support teams need to identify customer or ticket groups to improve service strategy.",
-        "solution": "Apply K-Means clustering and evaluate cluster quality using elbow method and silhouette score.",
-        "business_value": "Segmentation, unsupervised learning, and operational customer analytics.",
+        "problem": "I am working on customer support segmentation to identify different ticket or customer groups.",
+        "work": "I am applying K-Means clustering and using elbow method and silhouette score to evaluate cluster quality.",
+        "value": "This project strengthens my unsupervised learning and customer analytics skills.",
         "pages": ["Data Overview", "Cluster Selection", "Segment Profiles", "Recommendations"],
         "kpis": ["Cluster count", "Silhouette score", "Inertia", "Segment size", "Support priority"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -632,9 +632,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Synthetic CSR project dataset inspired by internship workflows",
         "tools": ["Excel", "Power BI", "Budget Analysis", "Stakeholder Reporting", "Compliance Tracking"],
-        "problem": "CSR projects need clear tracking across budgets, vendors, beneficiaries, documents, and impact.",
-        "solution": "Build a CSR dashboard for health, education, water supply, and welfare initiatives.",
-        "business_value": "Project monitoring, budget control, beneficiary reporting, and compliance tracking.",
+        "problem": "This planned case study is based on CSR project monitoring, budget tracking, vendors, beneficiaries, and compliance records.",
+        "work": "I plan to design a dashboard for health, education, water supply, and welfare project monitoring.",
+        "value": "The case study will connect my PPL internship experience with analytics and reporting workflows.",
         "pages": ["CSR Portfolio Overview", "Project Category", "Budget and Vendor", "Impact", "Compliance"],
         "kpis": ["Projects", "Budget used", "Beneficiaries", "Completed projects", "Delayed projects"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -648,9 +648,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Synthetic workflow dataset",
         "tools": ["Python", "SQL", "Power BI", "Process Mapping", "AI Recommendations"],
-        "problem": "Manual workflows hide bottlenecks, errors, rework, and avoidable cost.",
-        "solution": "Compare manual steps with automation-ready workflows and identify improvement opportunities.",
-        "business_value": "Automation priority, time savings, error reduction, and cost control.",
+        "problem": "This planned case study focuses on manual workflows, bottlenecks, errors, rework, and avoidable cost.",
+        "work": "I plan to compare manual and automation-ready workflows and estimate improvement opportunities.",
+        "value": "The case study will show process analysis, automation planning, and business systems thinking.",
         "pages": ["Executive Overview", "Process Flow", "Automation Impact", "Recommendations"],
         "kpis": ["Total cases", "Average processing time", "Manual hours saved", "Error rate", "Estimated cost savings"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -664,9 +664,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Synthetic customer dataset",
         "tools": ["Python", "SQL", "Machine Learning", "Power BI", "Customer Segmentation"],
-        "problem": "Businesses lose revenue when they do not identify at-risk customers early.",
-        "solution": "Build churn risk scores, customer segments, and retention action recommendations.",
-        "business_value": "Retention campaigns, revenue protection, and churn driver analysis.",
+        "problem": "This planned case study focuses on identifying customers who may leave and understanding churn drivers.",
+        "work": "I plan to create churn risk scores, customer segments, and retention-focused dashboard views.",
+        "value": "The case study will show customer analytics, segmentation, and revenue protection thinking.",
         "pages": ["Churn Overview", "Customer Segments", "Churn Drivers", "Action Plan"],
         "kpis": ["Churn rate", "Revenue at risk", "High-risk customers", "Retention opportunity value"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -680,9 +680,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Synthetic campaign data or public business data",
         "tools": ["Power BI", "Excel", "SQL", "Funnel Analysis", "ROI Analysis"],
-        "problem": "Marketing teams need to know which campaigns and channels generate profitable outcomes.",
-        "solution": "Analyze channel spend, conversions, revenue, profitability, and budget allocation.",
-        "business_value": "Marketing budget decisions and campaign performance reporting.",
+        "problem": "This planned case study focuses on campaign spend, conversions, revenue, profitability, and channel performance.",
+        "work": "I plan to design a marketing dashboard that connects campaign results with budget and ROI reporting.",
+        "value": "The case study will show marketing analytics and budget decision support.",
         "pages": ["Campaign Overview", "Channel Performance", "Customer Funnel", "Budget Optimizer"],
         "kpis": ["Total spend", "Revenue", "ROAS", "Conversion rate", "CPA"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -696,9 +696,9 @@ projects = [
         "difficulty": "Intermediate",
         "dataset": "Simulated financial dataset",
         "tools": ["Excel", "Power BI", "SQL", "Variance Analysis", "Accounting"],
-        "problem": "Managers need to understand revenue, expenses, profit, cash flow, and budget variance.",
-        "solution": "Create a finance dashboard that explains performance movement and cost control areas.",
-        "business_value": "Executive decision-making and budget control.",
+        "problem": "This planned case study focuses on revenue, expenses, profit, cash flow, and budget variance.",
+        "work": "I plan to create a finance dashboard that explains performance movement and cost control areas.",
+        "value": "The case study will show financial reporting, variance analysis, and decision support.",
         "pages": ["Financial Overview", "Revenue Analysis", "Expense and Budget Control", "Cash Flow"],
         "kpis": ["Revenue", "Gross profit", "Net profit", "Operating expenses", "Cash balance"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -712,9 +712,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Open city data",
         "tools": ["Python", "Public APIs", "Geospatial Analytics", "Power BI Maps", "Business Storytelling"],
-        "problem": "Small businesses need location intelligence but often cannot afford expensive market research.",
-        "solution": "Use city open data to score suburbs for demand, competition, risk, and opportunity.",
-        "business_value": "Location analysis for cafes, clinics, cleaning companies, and retail stores.",
+        "problem": "This planned case study focuses on location intelligence for small businesses using public city data.",
+        "work": "I plan to score suburbs by demand, competition, risk, and opportunity using open data.",
+        "value": "The case study will show public data analytics, maps, and business location analysis.",
         "pages": ["Location Score", "Map View", "Business Opportunity", "Final Recommendation"],
         "kpis": ["Best suburbs", "Demand score", "Competition level", "Risk score", "Opportunity score"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -728,9 +728,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Sample candidate dataset",
         "tools": ["Python", "NLP", "AI Automation", "Power BI", "Responsible AI"],
-        "problem": "Recruitment teams need faster screening, but AI systems must stay transparent and fair.",
-        "solution": "Build a candidate matching dashboard with skill extraction, pipeline analytics, and fairness checks.",
-        "business_value": "Hiring pipeline visibility with human review and responsible AI.",
+        "problem": "This planned case study focuses on recruitment analytics, candidate matching, pipeline visibility, and responsible AI checks.",
+        "work": "I plan to design a candidate matching dashboard with skill extraction, hiring funnel metrics, and fairness review sections.",
+        "value": "The case study will show HR systems thinking, AI awareness, and human-review workflow design.",
         "pages": ["Recruitment Overview", "Candidate Match", "Pipeline Analytics", "Fairness Check"],
         "kpis": ["Applicants", "Shortlisted candidates", "Average match score", "Hiring funnel conversion"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -744,9 +744,9 @@ projects = [
         "difficulty": "Advanced",
         "dataset": "Retail inventory dataset",
         "tools": ["SQL", "Power BI", "Inventory Analytics", "Forecasting", "Operations Analysis"],
-        "problem": "Businesses lose money through stockouts, overstocking, slow-moving inventory, and supplier delays.",
-        "solution": "Build an inventory dashboard with reorder recommendations and supplier performance analysis.",
-        "business_value": "Purchasing decisions, stock control, supplier review, and margin protection.",
+        "problem": "This planned case study focuses on stockouts, overstocking, slow-moving inventory, and supplier delays.",
+        "work": "I plan to design an inventory dashboard with reorder recommendations and supplier performance analysis.",
+        "value": "The case study will show operations analytics, inventory control, and supplier reporting.",
         "pages": ["Inventory Overview", "Product Performance", "Supplier Performance", "Reorder Recommendation"],
         "kpis": ["Inventory value", "Stockout risk", "Overstocked items", "Slow-moving stock", "Supplier delay rate"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -760,9 +760,9 @@ projects = [
         "difficulty": "Advanced Prototype",
         "dataset": "Sample company documents",
         "tools": ["Python", "LLMs", "RAG", "APIs", "Vector Databases", "Dashboard Monitoring"],
-        "problem": "Business teams waste time searching policies, SOPs, reports, and project documents.",
-        "solution": "Build a RAG assistant prototype that answers questions from sample business documents and tracks answer quality.",
-        "business_value": "Knowledge access, document coverage, unresolved question tracking, and human review workflows.",
+        "problem": "This planned case study focuses on helping teams search policies, SOPs, reports, and project documents more efficiently.",
+        "work": "I plan to prototype a RAG-based assistant using sample business documents and track answer quality.",
+        "value": "The case study will show knowledge management, document search, and AI automation workflow thinking.",
         "pages": ["Assistant Overview", "Document Knowledge Base", "Query Analytics", "Quality and Risk"],
         "kpis": ["Questions asked", "Answer success rate", "Response time", "Documents searched", "Unanswered questions"],
         "github": "https://github.com/rubinaahmedmahar2002-arch/Projects"
@@ -775,7 +775,7 @@ experience = [
         "company": "A. F. Ferguson & Co. | PwC Network",
         "duration": "Sep 2025 - Dec 2025",
         "location": "Pakistan",
-        "details": "Prepared, cleaned, and structured multi-source datasets for KPI tracking, HR reporting, payroll data accuracy, and operational analysis. Supported Excel and SQL reporting workflows, built dashboards and analytical summaries, conducted data validation checks, and improved reporting workflows for internal teams.",
+        "details": "I worked with multi-source datasets for KPI tracking, HR reporting, payroll data accuracy, and operational analysis. My work included Excel and SQL reporting, dashboard summaries, data validation checks, and reporting workflow improvements.",
         "tags": ["Data Cleaning", "KPI Reporting", "SQL", "Excel", "Dashboards", "Data Validation", "Reporting Automation"]
     },
     {
@@ -783,7 +783,7 @@ experience = [
         "company": "Pakistan Petroleum Limited",
         "duration": "Jul 2025 - Aug 2025",
         "location": "Karachi, Pakistan",
-        "details": "Supported CSR and community development projects across education, health, water supply, and welfare initiatives. Prepared Excel-based budget sheets, cost estimates, operational records, project trackers, documentation packs, stakeholder follow-up records, and management reporting updates.",
+        "details": "I supported CSR and community development work across education, health, water supply, and welfare initiatives. My work included budget sheets, cost estimates, project trackers, documentation packs, stakeholder records, and management reporting updates.",
         "tags": ["CSR", "Budgeting", "Documentation", "Stakeholder Coordination", "Reporting", "Project Tracking", "Compliance"]
     },
     {
@@ -791,7 +791,7 @@ experience = [
         "company": "Oigetit Real-Time AI Intelligence Platform",
         "duration": "Aug 2024 - Nov 2024",
         "location": "Remote",
-        "details": "Tested web-based product features, identified bugs, reviewed content quality, monitored RSS feeds, documented defects, and supported product improvement in a remote agile environment.",
+        "details": "I tested web product features, documented defects, reviewed content quality, monitored RSS feeds, and supported product improvement in a remote environment.",
         "tags": ["QA", "Testing", "AI Platform", "Issue Tracking", "Workflow Review", "Content Quality"]
     },
     {
@@ -799,7 +799,7 @@ experience = [
         "company": "Prodigy InfoTech",
         "duration": "Jun 2024 - Aug 2024",
         "location": "Remote",
-        "details": "Completed project-based data science tasks involving data cleaning, exploratory data analysis, visualization, customer behaviour analysis, decision tree modeling, and business pattern identification using Python.",
+        "details": "I completed project-based data science tasks using Python, EDA, visualisation, customer behaviour analysis, and machine learning models.",
         "tags": ["Python", "EDA", "Visualization", "Machine Learning", "Pandas", "NumPy", "Decision Tree"]
     },
     {
@@ -807,7 +807,7 @@ experience = [
         "company": "SYNC INTERN'S",
         "duration": "Mar 2024 - Apr 2024",
         "location": "Remote",
-        "details": "Completed hands-on analytics and AI tasks involving data preparation, customer analysis, experimentation, uplift testing, and business-focused data interpretation.",
+        "details": "I completed analytics and AI tasks involving data preparation, customer analysis, experimentation, uplift testing, and business-focused interpretation.",
         "tags": ["AI", "Customer Analysis", "Experimentation", "Analytics", "Business Interpretation", "Uplift Testing"]
     },
     {
@@ -815,7 +815,7 @@ experience = [
         "company": "AI DataYard",
         "duration": "Oct 2023 - Dec 2023",
         "location": "Remote",
-        "details": "Created digital content to support online visibility, brand awareness, and AI service positioning. Supported social media engagement, content planning, and digital communication.",
+        "details": "I created digital content for online visibility, brand awareness, and AI service positioning. I also supported social media engagement and content planning.",
         "tags": ["Digital Marketing", "Content Strategy", "AI Services", "Brand Awareness", "Communication"]
     },
     {
@@ -823,7 +823,7 @@ experience = [
         "company": "PakLaunch",
         "duration": "Jul 2023 - Sep 2023",
         "location": "Remote",
-        "details": "Promoted initiatives through digital outreach, student engagement, event promotion, and community-building activities focused on entrepreneurship and professional development.",
+        "details": "I promoted initiatives through student engagement, digital outreach, event promotion, and community-building activities.",
         "tags": ["Community Engagement", "Outreach", "Event Promotion", "Public Speaking", "Communication"]
     },
     {
@@ -831,7 +831,7 @@ experience = [
         "company": "GAOTek Inc.",
         "duration": "Jun 2023 - Jul 2023",
         "location": "Remote",
-        "details": "Conducted market research, lead generation, competitive analysis, market mapping, and research on potential clients and industry segments.",
+        "details": "I supported market research, lead generation, competitive analysis, market mapping, and client research.",
         "tags": ["Market Research", "Lead Generation", "Competitive Analysis", "Business Development", "Client Research"]
     }
 ]
@@ -928,27 +928,27 @@ education = [
 profile_summary = [
     {
         "area": "Data Analytics",
-        "summary": "Python, SQL, Excel, Power BI, data cleaning, EDA, KPI reporting, and dashboard-style analysis.",
+        "summary": "I work with Python, SQL, Excel, Power BI, data cleaning, EDA, KPI reporting, and dashboard-style analysis.",
         "source": "Portfolio projects and A. F. Ferguson data analyst role"
     },
     {
         "area": "Business Analysis",
-        "summary": "Process tracking, documentation, stakeholder reporting, budget trackers, and business-focused project summaries.",
+        "summary": "I have worked on process tracking, documentation, stakeholder reporting, budget trackers, and business-focused project summaries.",
         "source": "PPL Community Development internship and project tracker work"
     },
     {
         "area": "Machine Learning",
-        "summary": "Regression, classification, clustering, model evaluation, and feature interpretation.",
+        "summary": "My project work includes regression, classification, clustering, model evaluation, and feature interpretation.",
         "source": "AI job market, medical cost, soybean ML, heart risk, and clustering projects"
     },
     {
         "area": "AI Automation",
-        "summary": "n8n, LLM tools, RAG concepts, APIs, and workflow automation.",
+        "summary": "I am building my skills in n8n, LLM tools, RAG concepts, APIs, and workflow automation.",
         "source": "Certifications and planned AI automation projects"
     },
     {
         "area": "Quality Assurance",
-        "summary": "Web product testing, bug documentation, content quality review, and workflow testing.",
+        "summary": "I have experience with web product testing, bug documentation, content quality review, and workflow testing.",
         "source": "Oigetit QA Analyst role"
     }
 ]
@@ -1037,6 +1037,16 @@ def status_badge(status):
     return "badge-purple"
 
 
+def project_intro(project):
+    if project["status"] == "Completed":
+        return project["work"]
+
+    if project["status"] == "In Progress":
+        return project["work"]
+
+    return project["work"]
+
+
 def plotly_layout(fig):
     fig.update_layout(
         paper_bgcolor="rgba(0,0,0,0)",
@@ -1052,7 +1062,7 @@ def plotly_layout(fig):
 
 with st.sidebar:
     st.markdown("### Rubina Ahmed Mahar")
-    st.caption("ICT Business Analyst | Data Analytics | AI Automation")
+    st.caption("Business Analyst | Data Analytics | AI Automation")
 
     selected = option_menu(
         menu_title=None,
@@ -1111,25 +1121,25 @@ if selected == "Home":
     st.markdown(
         """
         <div class="hero">
-    <div class="hero-content">
-        <div class="eyebrow">Business Analyst | Data Analytics | AI Automation</div>
-        <div class="hero-title">Rubina Ahmed Mahar</div>
-        <div class="hero-subtitle">
-            SQL, Python, Power BI, Excel, Machine Learning, LLMs, RAG, APIs, Cloud, Automation
+            <div class="hero-content">
+                <div class="eyebrow">Business Analyst | Data Analytics | AI Automation</div>
+                <div class="hero-title">Rubina Ahmed Mahar</div>
+                <div class="hero-subtitle">
+                    SQL, Python, Power BI, Excel, Machine Learning, LLMs, RAG, APIs, Cloud, Automation
+                </div>
+                <p class="hero-text">
+                    A collection of my analytics, reporting, business systems, and automation projects.
+                </p>
+                <span class="badge">Python</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Power BI</span>
+                <span class="badge">Excel</span>
+                <span class="badge-purple">Business Analysis</span>
+                <span class="badge-purple">Business Systems</span>
+                <span class="badge-green">AI Automation</span>
+                <span class="badge-green">Machine Learning</span>
+            </div>
         </div>
-        <p class="hero-text">
-            A collection of projects demonstrating analytical thinking, dashboard development, business reporting, and automation workflows.
-        </p>
-        <span class="badge">Python</span>
-        <span class="badge">SQL</span>
-        <span class="badge">Power BI</span>
-        <span class="badge">Excel</span>
-        <span class="badge-purple">Business Analysis</span>
-        <span class="badge-purple">Business Systems</span>
-        <span class="badge-green">AI Automation</span>
-        <span class="badge-green">Machine Learning</span>
-    </div>
-</div>
         """,
         unsafe_allow_html=True
     )
@@ -1204,7 +1214,7 @@ if selected == "Home":
                 <div class="glass">
                     <h3>{project["short_name"]}</h3>
                     <p class="small-muted">{project["track"]}</p>
-                    <p class="subtle">{project["business_value"]}</p>
+                    <p class="subtle">{project["value"]}</p>
                     <span class="{status_badge(project["status"])}">{project["status"]}</span>
                 </div>
                 """,
@@ -1291,7 +1301,7 @@ elif selected == "Projects":
                 or s in str(row["track"]).lower()
                 or s in str(row["tools"]).lower()
                 or s in str(row["problem"]).lower()
-                or s in str(row["solution"]).lower(),
+                or s in str(row["work"]).lower(),
                 axis=1
             )
         ]
@@ -1303,7 +1313,7 @@ elif selected == "Projects":
             f"""
             <div class="project-card">
                 <h2>{project["name"]}</h2>
-                <p class="subtle">{project["solution"]}</p>
+                <p class="subtle">{project_intro(project)}</p>
                 <span class="{status_badge(project["status"])}">{project["status"]}</span>
                 <span class="badge-purple">{project["role"]}</span>
                 <span class="badge-green">{project["track"]}</span>
@@ -1317,20 +1327,20 @@ elif selected == "Projects":
         )
 
         with st.expander("Project details"):
-            t1, t2 = st.tabs(["Business Case", "Dashboard Plan"])
+            t1, t2 = st.tabs(["Business Case", "Dashboard Structure"])
 
             with t1:
-                st.markdown(f"**Problem:** {project['problem']}")
-                st.markdown(f"**Solution:** {project['solution']}")
-                st.markdown(f"**Business value:** {project['business_value']}")
+                st.markdown(f"**Why I worked on it:** {project['problem']}")
+                st.markdown(f"**What I did:** {project['work']}")
+                st.markdown(f"**Value:** {project['value']}")
                 st.markdown(f"**Dataset:** {project['dataset']}")
 
             with t2:
-                st.markdown("**Dashboard pages:**")
+                st.markdown("**Dashboard sections:**")
                 for page in project["pages"]:
                     st.markdown(f"- {page}")
 
-                st.markdown("**Core KPIs:**")
+                st.markdown("**Metrics used:**")
                 for kpi in project["kpis"]:
                     st.markdown(f"- {kpi}")
 
@@ -1348,7 +1358,7 @@ elif selected == "Process Calculator":
         <div class="info-panel">
             <h2>Business Process Savings Calculator</h2>
             <p class="subtle">
-                Estimate time savings, cost savings, and quality improvement for a repetitive workflow.
+                I created this calculator to estimate time savings, cost savings, and quality improvement for repetitive workflows.
             </p>
         </div>
         """,
@@ -1543,7 +1553,7 @@ elif selected == "Role Fit":
         <div class="info-panel">
             <h2>{role}</h2>
             <p class="subtle">
-                Projects aligned with this target role.
+                Projects that match this target role.
             </p>
         </div>
         """,
@@ -1562,7 +1572,7 @@ elif selected == "Role Fit":
             f"""
             <div class="project-card">
                 <h2>{project["name"]}</h2>
-                <p class="subtle">{project["business_value"]}</p>
+                <p class="subtle">{project["value"]}</p>
                 <span class="{status_badge(project["status"])}">{project["status"]}</span>
                 <span class="badge-purple">{project["domain"]}</span>
                 <br><br>
